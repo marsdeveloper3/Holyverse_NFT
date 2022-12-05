@@ -1,0 +1,209 @@
+.description{
+    width: 100%;
+    height:970px;
+}
+.title{
+    height:100%;
+    background-color: #f3f3f5;
+    
+}
+.titlecontent{
+    padding-left: 20%;
+    padding-top: 35%;
+    font-size: 80px;
+    font-weight: bold;
+    opacity: 1;
+    fill-rule: evenodd;
+    color: #22193e;
+}
+.content{
+    background-Color:white;
+     height: 100%;
+}
+.contentscript{
+    color: #5d5f61;
+    font-size: 18px;
+    fill-rule: evenodd;
+    opacity: 1;
+    padding-top: 33%;
+    padding-left: 20%;
+}
+.circlbelowbtn{
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin-top: 20%;
+    margin-left: 80%;
+}
+.circlbelowbtn1{
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.namesize
+{
+    font-size: 20px;;
+}
+.lastsale{
+    font-size: 18px;
+}
+.avartars{
+    background-color: black;
+    width:100%;
+    height: auto;
+}
+.avartarcontent{
+    display: flex;
+    font-size:21px ;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+.avartarfield{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.intro{
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+.interusecase{
+    height: auto;
+    width: 100%;
+}
+.stuffleft{
+    color: #1e1935;
+    font-size: 18px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.intertitle{
+    padding-left: 20%;
+    padding-top: 20%;
+    font-size: 60px;
+    color: #22193e;
+    font-weight: bold;
+}
+.laststufftitle{
+    padding-left: 20%;
+    padding-top: 20%;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+.intercontent{
+    padding-top: 1%;
+    padding-left: 20%;
+    font-size: 21px;
+    color: #5d5f61;
+    padding-bottom: 10%;
+}
+.blackimg{
+    height: auto;
+    width: 100%;
+}
+.blackimage{
+    width: 65%;
+    height: auto;
+    padding-left: 15%;
+    padding-top: 20%;
+}
+.laststuff{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#281D6C,#6545A0);
+}
+.whiterectangle{
+    background-color: white;
+    width:300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-top:50%;
+}
+.stuffright{
+    width: 100%;
+    height: auto;
+}
+.contenttitle{
+    color: white;
+    font-size: 40px;
+     padding-left: 20%;
+     padding-top: 40%;   
+}
+.ringtcontent{
+    
+    color: white;
+    font-size: 18px;
+}
+.ringtcontent2{
+    color: white;
+    font-size: 18px;
+    padding-left: 20%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.bigwhiterectangle{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.teamintro{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    
+}
+.teamtile{
+    padding-top: 5%;
+    padding-left: 40%;
+    font-size: 80px;
+    color: #1e1935;
+}
+.teamcontent{
+    font-size: 18px;
+    color: #5d5f61;
+    padding-left: 35%;
+    padding-top: 1%;
+}
+.avartashow{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+.avartashow .MuiAvatar-colorDefault {
+    width: 200px!important;
+    height: 200px!important;
+}
+
+.avartashow .MuiAvatar-img {
+    width: 50px !important;
+    height: 50px !important;
+}
+.teamscript{
+    text-align: center;
+}
+.greatdesign{
+    background: linear-gradient(to bottom left, #f1a6b9,#a784e9);
+    width: 100%;
+    height: auto;
+}
