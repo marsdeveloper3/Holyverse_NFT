@@ -9,7 +9,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/divider';
+import { Divider } from '@mui/material';
  import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
