@@ -300,30 +300,7 @@ function Home() {
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
-                {/* <Stack direction="row" spacing={5} style={{ justifyContent: 'space-between', marginTop: '150px' }}>
-                        <div className='lastbarnd'>
-                            <div className='lasttitle'><img src="logo-horizontal.png" /></div>
-                            <div className='lastcontent'>
-                                <p>COMICS REIMAGINED</p>
-                            </div>
-                        </div>
-                        <div className='details'>
-                            <div className='infos'>
-                                <div>INFO</div>
-                                <div>About</div>
-                                <div>NFTsl</div>
-                                <div>Whitepaper</div>
-                                <div>FAQs</div>
-                            </div>
-                            <div className='socials'>
-                                <div>SOCIALS</div>
-                                <div>Instragram</div>
-                                <div>Twitter</div>
-                                <div>Tiktok</div>
-                            </div>
-                        </div>
-                    </Stack>
-                    <hr className='footerline' /> */}
+                <hr style={{marginBottom:"10%"}}/>
             </div>
             {/* </Grid> */}
         </div>

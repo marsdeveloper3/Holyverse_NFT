@@ -224,7 +224,7 @@ function Last(){
                             </div>
                         </div>
                     </Stack>  
-                    <hr className='footerline' />
+                    <hr style={{marginBottom:"10%"}}/>
             </div>
         </div>
     );

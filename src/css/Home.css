@@ -7,7 +7,7 @@
 
 .interactive {
     position: relative;
-    font-size: 5.5vw;
+    font-size: 40px;
     font-family: inherit;
     font-style: inherit;
     font-weight: bold;
@@ -29,7 +29,7 @@
 
 
 .script1 {
-    font-size: 1.4vw;
+    font-size: 15px;
     color: #5d5f61;
     fill-rule: evenodd;
     /* letter-spacing: -25px; */
@@ -70,7 +70,7 @@
 
 .story {
     margin-top: 50px;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .storytitle {

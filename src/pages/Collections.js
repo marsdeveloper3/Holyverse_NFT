@@ -26,7 +26,7 @@ function Third(){
             <div className='navbar'>
                 <Main/>
             </div>
-            <Paper elevation={3} sx={{ width:"90%",height:"600px", backgroundColor:"#F1F1F3",borderRadius:"10px",marginLeft:"5%",marginTop:"50px",marginBottom:"100px"}} >
+            <Paper elevation={3} sx={{ width:"90%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",marginLeft:"5%",marginTop:"50px"}} >
                 <div className="makestuff">
                     <b>We Make Stuff<br/> Happen</b>
                 </div>
@@ -34,33 +34,49 @@ function Third(){
                     <a>We are laying the groundwork for web3 — the next generation<br/>
                         of the internet full of limitless possibilites.</a>
                 </div>
-                <button className='circlbelowbtn'><ArrowDownIcon /></button>
+                <button className='circlbelowbtn' style={{marginBottom:"10%"}}><ArrowDownIcon /></button>
             </Paper>
+
+            <Grid container >
+                <Grid item xs={12} md={6} p={5}>
+                    
+                        <div className='sm_box'></div>
+                        <div className='lg_box'></div>
+                        <div className='sm_box'></div>
+                        <div className='lg_box'></div>
+                    
+                </Grid>
+                <Grid item xs={12} md={6} p={5}>
+                    
+                        <div className='special1'>
+                            <div className='holy'>
+                                <b>HolyComics#001</b>
+                            </div>
+                            <div className='holyscript'>
+                                <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </b>
+                            </div>
+                        </div>
+                    
+                        <div className='sm_box1'></div>
+                        <div className='special2'></div>
+                            <div className='sm_box1'></div>
+                    
+                </Grid>
+            </Grid>
+
+
             <div className='boxs'>
                     <ImageList variant="masonry" cols={2}>
                         <ImageListItem >
-                            <div className='sm_box'></div>
-                            <div className='lg_box'></div>
-                            <div className='special1'>
-                                <div className='holy'>
-                                    <b>HolyComics#001</b>
-                                </div>
-                                <div className='holyscript'>
-                                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </b>
-                                </div>
-                            </div>
-                            <div className='sm_box1'></div>
-                            
-                             
-                        </ImageListItem>
+                               
+                                
+                         </ImageListItem>
                     </ImageList>
                     <ImageList variant="masonry" cols={2}>
                         <ImageListItem >
-                            <div className='sm_box'></div>
-                            <div className='lg_box'></div>
-                            <div className='special2'></div>
-                            <div className='sm_box1'></div>
+                            
+                            
                             
                         </ImageListItem>
                     </ImageList>
@@ -87,31 +103,42 @@ function Third(){
                     </div>
                 </Stack>
             </div>
-            <div className='lastgruop' style={{height:"400px"}}>
-                    <Stack direction="row" spacing={5} style = {{justifyContent:'space-between', marginTop:'150px'}}>
+            <div className='lastgroup'>
+                <Grid container >
+                    <Grid item xs={12} md={6}>
                         <div className='lastbarnd'>
-                            <div className='lasttitle'><img  src="logo-horizontal.png" /></div>
+                            <div className='lasttitle'><img src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
                             </div>
                         </div>
-                        <div  className='details'>
-                            <div className='infos'>
-                                <div>INFO</div>
-                                <div>About</div>
-                                <div>NFTsl</div>
-                                <div>Whitepaper</div>
-                                <div>FAQs</div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        {/* <Grid container > */}
+                            <div className='details'>
+                                <Grid item xs={12} md={6}>
+                                    <div className='infos'>
+                                        <div>INFO</div>
+                                        <div>About</div>
+                                        <div>NFTsl</div>
+                                        <div>Whitepaper</div>
+                                        <div>FAQs</div>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} md={6}>
+
+                                    <div className='socials'>
+                                        <div>SOCIALS</div>
+                                        <div>Instragram</div>
+                                        <div>Twitter</div>
+                                        <div>Tiktok</div>
+                                    </div>
+                                </Grid>
                             </div>
-                            <div className='socials'>
-                                <div>SOCIALS</div>
-                                <div>Instragram</div>
-                                <div>Twitter</div>
-                                <div>Tiktok</div>
-                            </div>
-                        </div>
-                    </Stack>  
-                    <hr className='footerline' />
+                        {/* </Grid>  */}
+                    </Grid>
+                </Grid>
+                <hr style={{marginBottom:"10%"}}/>
             </div>
         </div>
     );

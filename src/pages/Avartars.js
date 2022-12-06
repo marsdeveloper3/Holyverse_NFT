@@ -32,7 +32,7 @@ function Second(){
             <div>
                 <Main/>
             </div>
-            <Grid container >
+            <Grid container style={{padding:"5%"}} >
                     {/* <div className="title"> */}
                     <Grid item xs={12} sm={6}>
                             <div className='titlecontent'>
@@ -107,8 +107,8 @@ function Second(){
                 </Grid>
             </div>
             {/* <div className='intro'> */}
-            <Grid container >
-                <Grid item xs={12} md={6} p={20} >
+            <Grid container style={{paddingBottom:"5%"}} >
+                <Grid item xs={12} md={6} p={10} >
                     {/* <div className='interusecase'> */}
                         <div className='intertitle'>   
                             <b>Insert Usecase<br/> here</b>
@@ -126,7 +126,7 @@ function Second(){
                         </div>
                     {/* </div> */}
                 </Grid>
-                <Grid item xs={12} md={6} p={20} >
+                <Grid item xs={12} md={6} p={10} >
                     <div className='blackimg'>
                             <img className='blackimage' src='black.png'/>
                     </div>
@@ -169,6 +169,7 @@ function Second(){
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
+                <hr style={{marginBottom:"10%"}}/>
             </div>
             {/* </div> */}
             {/* <div className='lastgruop' style={{height:"400px"}}>
