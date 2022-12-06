@@ -120,12 +120,12 @@ const Main = (props) => {
                   <MenuItem
                     onClick={() => setAnchor(null)}
                     component={Link}
-                    to="/avatars"
+                    to="/avartars"
                   >
                     <ListItemIcon>
                       <PersonIcon />
                     </ListItemIcon>
-                    <Typography variant="h6"> Avatars</Typography>
+                    <Typography variant="h6"> Avartars</Typography>
                   </MenuItem>
                   <MenuItem
                     onClick={() => setAnchor(null)}
@@ -153,16 +153,16 @@ const Main = (props) => {
                 <Button
                   variant="text"
                   component={Link}
-                  to="/College"
+                  to="/collections"
                   color="default"
                 >
                   <SchoolIcon />
-                  College
+                  Collections
                 </Button>
                 <Button
                   variant="text"
                   component={Link}
-                  to="/About"
+                  to="/about"
                   color="default"
                 >
                   <PersonIcon />
@@ -171,11 +171,11 @@ const Main = (props) => {
                 <Button
                   variant="text"
                   component={Link}
-                  to="/Personal"
+                  to="/avartars"
                   color="default"
                 >
                   <BookmarksIcon />
-                  Personal
+                  Avartars
                 </Button>
               </div>
             )}
