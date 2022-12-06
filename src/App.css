@@ -28,6 +28,45 @@
   color: #61dafb;
 }
 
+.statisticsDiv {
+  background-color: #271948; 
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 10%;
+}
+
+.collection_area {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 47%;
+}
+
+.planet {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+.collection_area > div {
+  width: 100% !important;
+}
+
+.btn-group {
+  min-height: 100px;
+}
+
+.second_header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+.nft_price label {
+  color: grey
+} 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

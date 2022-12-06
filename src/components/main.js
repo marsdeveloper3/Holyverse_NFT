@@ -1,76 +1,190 @@
-import React, {Component} from 'react';
-
-
+// IMPORTING APIS
+import React from "react";
 import {
   AppBar,
   Toolbar,
-  CssBaseline,
+  IconButton,
   Typography,
-  makeStyles,
+  useMediaQuery,
+  Button,
+  useScrollTrigger,
+  Slide,
+  Menu,
+  MenuItem,
+  ListItemIcon
 } from "@material-ui/core";
-import Button from '@mui/material/Button';
-import Divider from '@mui/material/divider';
- import { Link } from "react-router-dom";
 
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+
+// IMPORTING ICONS
+import MenuIcon from "@material-ui/icons/Menu";
+import HomeIcon from "@material-ui/icons/Home";
+import SchoolIcon from "@material-ui/icons/School";
+import PersonIcon from "@material-ui/icons/Person";
+import BookmarksIcon from "@material-ui/icons/Bookmarks";
+
+// LOCAL-STYLING
 const useStyles = makeStyles((theme) => ({
-  navlinks: {
-    // marginLeft: theme.spacing(10),
-    display: "flex",
-    width: "70%",
+  root: {
+    flexGrow: 1
   },
- logo: {
-    marginLeft:"3%",
-    flexGrow: "1",
-    cursor: "pointer",
+  menuButton: {
+    marginRight: theme.spacing(2)
   },
-  link: {
-    textDecoration: "none",
-    color: "black",
-    fontSize: "1.4vw",
-    width: "20%",
-    display: "flex",
-    alignItems: "center",
-    // marginLeft: theme.spacing(20),
-    "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
-    },
-  },
+  title: {
+    flexGrow: 1
+  }
 }));
 
-function Main() {
-  const classes = useStyles();
+function HideOnScroll(props) {
+  const { children } = props;
+  const trigger = useScrollTrigger();
 
   return (
-    <AppBar position="static" style={{ background: '#ffffff' , color : '#7620b7'}}>
-      <CssBaseline />
-      <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
-            <img src="logo-horizontal.png"></img>
-        </Typography>
-          <div className={classes.navlinks}>
-            
-            <Divider orientation="vertical" flexItem sx={{marginRight: "5%"}} />  
-            
-            <Link to="/" className={classes.link}>
-              Home
-            </Link>
-            <Link to="/about" className={classes.link}>
-              About
-            </Link>
-            <Link to="/avartars" className={classes.link}>
-              Avartars
-            </Link>
-            <Link to="/collections" className={classes.link}>
-              Collections
-            </Link>
-            <Link to="" className={classes.link}>
-                <Button variant="outlined" style={{fontSize:"1vw"}}>Connnected wallet</Button>
-            </Link>
-          </div>
-      </Toolbar>
-    </AppBar>
+    <Slide appear={false} direction={"down"} in={!trigger}>
+      {children}
+    </Slide>
   );
 }
 
+const Main = (props) => {
+  const classes = useStyles();
+  const [anchor, setAnchor] = React.useState(null);
+  const open = Boolean(anchor);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const handleMenu = (event) => {
+    setAnchor(event.currentTarget);
+  };
+  return (
+    <div className={classes.root}>
+      <HideOnScroll {...props}>
+        <AppBar>
+          <Toolbar>
+            <Typography
+              variant="h5"
+              component="p"
+              color="textSecondary"
+              className={classes.title}
+            >
+              <Typography variant="h4" className={classes.logo}>
+                <img src="logo-horizontal.png"></img>
+              </Typography>
+            </Typography>
+            {isMobile ? (
+              <>
+                <IconButton
+                  color="textPrimary"
+                  className={classes.menuButton}
+                  edge="start"
+                  aria-label="menu"
+                  onClick={handleMenu}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchor}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right"
+                  }}
+                  KeepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right"
+                  }}
+                  open={open}
+                >
+                  <MenuItem
+                    onClick={() => setAnchor(null)}
+                    component={Link}
+                    to="/"
+                  >
+                    <ListItemIcon>
+                      <HomeIcon />
+                    </ListItemIcon>
+                    <Typography variant="h6"> Home</Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => setAnchor(null)}
+                    component={Link}
+                    to="/about"
+                  >
+                    <ListItemIcon>
+                      <SchoolIcon />
+                    </ListItemIcon>
+                    <Typography variant="h6"> About </Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => setAnchor(null)}
+                    component={Link}
+                    to="/avatars"
+                  >
+                    <ListItemIcon>
+                      <PersonIcon />
+                    </ListItemIcon>
+                    <Typography variant="h6"> Avatars</Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => setAnchor(null)}
+                    component={Link}
+                    to="/collections"
+                  >
+                    <ListItemIcon>
+                      <BookmarksIcon />
+                    </ListItemIcon>
+                    <Typography variant="h6"> Collections </Typography>
+                  </MenuItem>
+                </Menu>
+              </>
+            ) : (
+              <div style={{ marginRight: "2rem" }}>
+                <Button
+                  variant="text"
+                  component={Link}
+                  to="/"
+                  color="default"
+                >
+                  <HomeIcon />
+                  Home
+                </Button>
+                <Button
+                  variant="text"
+                  component={Link}
+                  to="/College"
+                  color="default"
+                >
+                  <SchoolIcon />
+                  College
+                </Button>
+                <Button
+                  variant="text"
+                  component={Link}
+                  to="/About"
+                  color="default"
+                >
+                  <PersonIcon />
+                  About
+                </Button>
+                <Button
+                  variant="text"
+                  component={Link}
+                  to="/Personal"
+                  color="default"
+                >
+                  <BookmarksIcon />
+                  Personal
+                </Button>
+              </div>
+            )}
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+    </div>
+  );
+};
+
 export default Main;
+

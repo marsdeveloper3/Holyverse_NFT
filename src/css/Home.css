@@ -1,18 +1,19 @@
-.secondgroup{
+.secondgroup {
     width: 100%;
     height: auto;
-    background-color:aliceblue;
+    background-color: aliceblue;
     padding: 10%;
 }
-.interactive{
-    position:relative;
+
+.interactive {
+    position: relative;
     font-size: 5.5vw;
-    font-family:inherit;
-    font-style:inherit;
-    font-weight:bold;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bold;
     color: #22193e;
     opacity: 1;
-    
+
     text-align: center;
 }
 
@@ -21,13 +22,13 @@
     display: flex;
     flex: 1;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 /*  */
 
 
-.script1{
+.script1 {
     font-size: 1.4vw;
     color: #5d5f61;
     fill-rule: evenodd;
@@ -35,209 +36,300 @@
     opacity: 1px;
     margin-top: 5%;
     font-weight: bold;
-    
-    
+
+
 }
-.imgplanets{
+
+.imgplanets {
     width: 50%;
     height: auto;
-    
-    /* background-image: url(/public/planets.png); */
-    /* background-size: 100% 100%; */
 }
-.planets{
+
+.blank_text {}
+
+.planets {
     margin-top: 10%;
 }
-.planetimg{
-    
-    
+
+.planetimg {
     border-radius: 40px;
-    width: 100%;
-    height:auto ;
+    width: 90%;
+    margin-left: 5% !important;
+    margin-top: 80px;
+    height: auto;
 }
-.storyline{
+
+.storyline {
     display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    height: 100%;
 }
-.story{
-    /* margin-top: 15%; */
+
+.story {
+    margin-top: 50px;
     margin-left: 20%;
 }
-.storytitle{
-    font-size: 4.5vw;
+
+.storytitle {
+    font-size: 50px;
     font-weight: bold;
     color: #22193e;
     fill-rule: evenodd;
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
 }
-.storycontent{
-    font-size: 1vw;
+
+.storyline p {
+    margin: 0;
+    padding: 5px;
+}
+
+.storycontent {
+    font-size: 24px;
     color: #5d5f61;
-    font-weight: bold;
     opacity: 1;
 }
-.blanks{
+
+
+
+
+.blanks {
     margin-top: 50px;
 }
-.blankimg{
+
+.blankimg {
     /* margin-right: 100px;
     margin-top: 30px; */
     border-radius: 40px;
     width: 100%;
-    height:auto ;
+    height: auto;
 }
-.imgblank{
+
+.imgblank {
     width: 50%;
     height: auto;
 }
-.originalp{
+
+.originalp {
     /* margin-top: 25%;
     margin-left:200px ; */
 }
-.story3{
-    
+
+.story3 {
+
     margin-left: 20%;
 }
-.keyboard{
+
+.keyboard {
     margin-top: 50px;
-    
+
 }
-.thirdgroup{
-    width: 100%;
+
+.thirdgroup {
     height: auto;
     background-color: black;
-    height: auto;
     padding: 5%;
 }
-.upgrade{
+
+.upgrade {
     /* padding-top: 150px;
     padding-left: 150px; */
     font-size: 3.5vw;
     font-weight: bold;
     color: #ffffff;
 }
-.upgradetitle{
+
+.upgrade_title {
+    margin-bottom: 25px;
+}
+
+.upgradetitle {
     margin: 0;
 }
-.upgradecontent{
+
+.upgradecontent {
     display: flex;
     justify-content: space-between;
 }
-.contentp{
+
+.contentp {
     margin: 0;
     font-size: 1vw;
     font-weight: bold;
     color: #5d5f61;
 }
-.purchasebtn{
+
+.purchasebtn {
     padding-right: 50px;
 }
-.avartarcontent{
+
+.avartarcontent {
     display: flex;
-    font-size:21px ;
+    font-size: 21px;
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
 }
-.lastsale{
-    font-size: 1vw;
+
+.lastsale {
+    font-size: 21px;
 }
-.namesize
-{
-    font-size: 1.4vw;
+
+.namesize {
+    font-size: 23px;
 }
 
 .MuiCardContent-root {
     padding: 0 !important;
 }
-.imgshowblock{
-    padding-top: 5%  ;
-    
+
+.imgshowblock {
+    padding-top: 5%;
+
 }
+
+.nft_item {
+    color: red;
+}
+
 .MuiCardMedia-img {
-    
-    
-    height: auto ;
+
+
+    height: auto;
 }
-.bottombtn{
+
+.bottombtn {
     padding-left: 47%;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.newslettergroup{
-    background-color:#22193e;
-    width: 100%;
+
+.newslettergroup {
+    background-color: #22193e;
     height: auto;
+    padding: 80px 8%;
 }
-.newtitle{
-    padding-left: 150px;
-    padding-top: 100px;
+
+.newtitle {
     font-size: 60px;
     font-weight: bold;
     color: white;
 }
-.newscontent{
+
+.newscontent {
     font-size: 21px;
     color: #5d5f61;
     font-weight: bold;
-    padding-left: 150px;
     padding-top: 60px;
 }
-.dtinput{
+
+.dtinput {
     font-size: 21px;
-    color:white;
+    color: white;
     font-weight: bold;
-    padding-left: 150px;
 }
-.subscribebtn{
-    width: 100%;
+
+.subscribebtn {
     padding-top: 50px;
-    padding-left: 150px;
     padding-bottom: 50px;
 }
-.lastgroup{
-    width: 100%;
+
+.lastgroup {
     height: auto;
+    padding-top: 50px;
 }
-.lastbrand{
+
+.lastbrand {
     width: 50%;
-}    
-.lasttitle{
+}
+
+.lasttitle {
     font-size: 60px;
     font-weight: bold;
-    color:#22193e;
-    padding-left: 100px;
+    color: #22193e;
+    /* padding-left: 100px; */
+    text-align: center;
 }
-.lastcontent{
+
+.lastcontent {
     margin: 0px;
     font-size: 21px;
-    font-weight: bold;
     color: #22193e;
     opacity: 1;
-    padding-left: 7vw;
+    text-align: center;
 }
 
 .details {
     display: flex;
-    width: 30%;
     margin-top: 2em;
     gap: 30px;
+    padding: 0 30px;
 }
 
-.infos div:first-child, .socials div:first-child {
+.details div {
+    text-align: center;
+}
+
+.infos div:first-child,
+.socials div:first-child {
     font-weight: bold;
     color: #22193e;
-    padding-right: 100px;
     margin-top: 10px;
 }
-.infos, .socials
-{
+
+.infos,
+.socials {
     font-size: 16px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.footerline{
+
+.footerline {
     margin-top: 100px;
-    margin-bottom:70px;;
+    margin-bottom: 70px;
+    ;
+}
+
+.nft_symbol {
+    font-size: 25px;
+}
+
+.nft_price {
+    font-size: 18px;
+}
+
+.newtitle {
+
+}
+
+@media only screen and (max-width: 1120px) {
+    .storycontent {
+        font-size: 14px;
+        color: #5d5f61;
+        opacity: 1;
+    }
+    .nft_symbol {
+        font-size: 19px;
+    }
+    .nft_price {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .storycontent {
+        font-size: 17px;
+        color: #5d5f61;
+        opacity: 1;
+    }
+    .nft_symbol {
+        font-size: 16px;
+    }
+    .nft_price {
+        font-size: 14px;
+    }
 }
