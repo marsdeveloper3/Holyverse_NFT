@@ -111,6 +111,7 @@ function Third(){
                             </div>
                         </div>
                     </Stack>  
+                    <hr className='footerline' />
             </div>
         </div>
     );

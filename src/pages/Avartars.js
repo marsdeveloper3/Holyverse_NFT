@@ -14,7 +14,7 @@ function Second(){
                 <Main/>
             </div>
             <div className='description'>
-            <SplitPane
+                <SplitPane
                     split="vertical"
                     minSize={100}
                     maxSize={-100}
@@ -101,6 +101,7 @@ function Second(){
                             </div>
                         </div>
                     </Stack>  
+                    <hr className='footerline' />
             </div>
         </div>
     );

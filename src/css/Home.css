@@ -2,26 +2,41 @@
     width: 100%;
     height: auto;
     background-color:aliceblue;
-    padding-bottom: 80px;
+    padding: 10%;
 }
 .interactive{
     position:relative;
-    font-size: 80px;
+    font-size: 5.5vw;
     font-family:inherit;
     font-style:inherit;
     font-weight:bold;
     color: #22193e;
     opacity: 1;
-    padding-top: 5%;
+    
     text-align: center;
 }
+
+/*  */
+.galaxySplit {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height:100%;
+}
+
+/*  */
+
+
 .script1{
-    font-size: 21px;
+    font-size: 1.4vw;
     color: #5d5f61;
     fill-rule: evenodd;
     /* letter-spacing: -25px; */
     opacity: 1px;
+    margin-top: 5%;
     font-weight: bold;
+    
+    
 }
 .imgplanets{
     width: 50%;
@@ -31,31 +46,32 @@
     /* background-size: 100% 100%; */
 }
 .planets{
-    margin-top: 50px;
+    margin-top: 10%;
 }
 .planetimg{
-    margin-left: 100px;
-    margin-top: 30px;
+    
+    
     border-radius: 40px;
-    width: 90%;
+    width: 100%;
     height:auto ;
 }
 .storyline{
+    display: flex;
+    align-items: center;
     width: 50%;
-    height: auto;
 }
 .story{
-    margin-top: 15%;
-    margin-left: 100px;
+    /* margin-top: 15%; */
+    margin-left: 20%;
 }
 .storytitle{
-    font-size: 60px;
+    font-size: 4.5vw;
     font-weight: bold;
     color: #22193e;
     fill-rule: evenodd;
 }
 .storycontent{
-    font-size: 21px;
+    font-size: 1vw;
     color: #5d5f61;
     font-weight: bold;
     opacity: 1;
@@ -64,10 +80,10 @@
     margin-top: 50px;
 }
 .blankimg{
-    margin-right: 100px;
-    margin-top: 30px;
+    /* margin-right: 100px;
+    margin-top: 30px; */
     border-radius: 40px;
-    width: 90%;
+    width: 100%;
     height:auto ;
 }
 .imgblank{
@@ -75,12 +91,12 @@
     height: auto;
 }
 .originalp{
-    margin-top: 25%;
-    margin-left:200px ;
+    /* margin-top: 25%;
+    margin-left:200px ; */
 }
 .story3{
-    margin-top: 35%;
-    margin-left: 100px;
+    
+    margin-left: 20%;
 }
 .keyboard{
     margin-top: 50px;
@@ -91,11 +107,12 @@
     height: auto;
     background-color: black;
     height: auto;
+    padding: 5%;
 }
 .upgrade{
-    padding-top: 150px;
-    padding-left: 150px;
-    font-size: 60px;
+    /* padding-top: 150px;
+    padding-left: 150px; */
+    font-size: 3.5vw;
     font-weight: bold;
     color: #ffffff;
 }
@@ -104,13 +121,11 @@
 }
 .upgradecontent{
     display: flex;
-    padding-top: 20px;
-    padding-left: 150px;
     justify-content: space-between;
 }
 .contentp{
     margin: 0;
-    font-size: 21px;
+    font-size: 1vw;
     font-weight: bold;
     color: #5d5f61;
 }
@@ -125,24 +140,24 @@
     align-items: center;
 }
 .lastsale{
-    font-size: 18px;
+    font-size: 1vw;
 }
 .namesize
 {
-    font-size: 20px;;
+    font-size: 1.4vw;
 }
 
 .MuiCardContent-root {
     padding: 0 !important;
 }
 .imgshowblock{
-    padding-top: 100px  ;
-    padding-left: 150px;
+    padding-top: 5%  ;
+    
 }
 .MuiCardMedia-img {
-    object-fit: cover;
-    width: 350px !important;
-    height: auto !important;
+    
+    
+    height: auto ;
 }
 .bottombtn{
     padding-left: 47%;
@@ -182,7 +197,7 @@
 }
 .lastgroup{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 .lastbrand{
     width: 50%;
@@ -221,4 +236,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.footerline{
+    margin-top: 100px;
+    margin-bottom:70px;;
 }

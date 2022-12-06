@@ -1,7 +1,7 @@
 .divclass
 {
-    width: 1265;
-    height:98;
+    width: 100%;
+    height:auto;
     margin-left: 35;
     font-size: 20px;
     color:red;

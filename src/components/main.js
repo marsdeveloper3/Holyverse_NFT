@@ -9,27 +9,28 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import Button from '@mui/material/Button';
-import { Divider } from '@mui/material';
+import Divider from '@mui/material/divider';
  import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    
-    marginLeft: theme.spacing(10),
+    // marginLeft: theme.spacing(10),
     display: "flex",
+    width: "70%",
   },
  logo: {
-    marginLeft:"35px",
+    marginLeft:"3%",
     flexGrow: "1",
     cursor: "pointer",
-    
-
   },
   link: {
     textDecoration: "none",
     color: "black",
-    fontSize: "20px",
-    marginLeft: theme.spacing(20),
+    fontSize: "1.4vw",
+    width: "20%",
+    display: "flex",
+    alignItems: "center",
+    // marginLeft: theme.spacing(20),
     "&:hover": {
       color: "yellow",
       borderBottom: "1px solid white",
@@ -41,7 +42,7 @@ function Main() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static" style={{ background: '#ffffff' ,color : '#7620b7'}}>
+    <AppBar position="static" style={{ background: '#ffffff' , color : '#7620b7'}}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
@@ -49,7 +50,7 @@ function Main() {
         </Typography>
           <div className={classes.navlinks}>
             
-            <Divider orientation="vertical" flexItem />  
+            <Divider orientation="vertical" flexItem sx={{marginRight: "5%"}} />  
             
             <Link to="/" className={classes.link}>
               Home
@@ -63,9 +64,9 @@ function Main() {
             <Link to="/collections" className={classes.link}>
               Collections
             </Link>
-            <a href="" className={classes.link}>
-                <Button variant="outlined">Connnected wallet</Button>
-            </a>
+            <Link to="" className={classes.link}>
+                <Button variant="outlined" style={{fontSize:"1vw"}}>Connnected wallet</Button>
+            </Link>
           </div>
       </Toolbar>
     </AppBar>
