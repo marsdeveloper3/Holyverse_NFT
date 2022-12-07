@@ -10,7 +10,7 @@
 .titlecontent{
     margin-top: 100px;
     
-    font-size:  50px;
+    font-size:  80px;
     font-weight: bold;
     opacity: 1;
     fill-rule: evenodd;
@@ -23,16 +23,12 @@
 }
 .contentscript{
     color: #5d5f61;
-    font-size: 16px;
+    font-size: 21px;
     fill-rule: evenodd;
     opacity: 1;
     /* padding-top: 33%; */
     /* padding-left: 10%; */
-<<<<<<< HEAD
     padding:10%;
-=======
-    padding:30px;
->>>>>>> 407a3ed71bc572d61642784c9271edd1a86a98e1
 }
 .circlbelowbtn{
     align-content: center;
@@ -101,12 +97,8 @@
 }
 .intertitle1{
     
-<<<<<<< HEAD
     padding-top: 10%;
-=======
-    padding-top: 20%;
->>>>>>> 407a3ed71bc572d61642784c9271edd1a86a98e1
-    font-size: 40px;
+    font-size: 60px;
     color: #22193e;
     font-weight: bold;
     padding: 10%;
@@ -115,34 +107,22 @@
 .laststufftitle{
     padding-left: 10%;
     padding-top: 20%;
-    font-size: 50px;
+    font-size: 80px;
     color: white;
     font-weight: bold;
-<<<<<<< HEAD
     padding-bottom: 40%;
 }
 .intercontent{
     
     /* padding-top: 10%; */
-=======
-    padding-bottom: 50%;
-}
-.intercontent{
-    
-    padding-top: 10%;
->>>>>>> 407a3ed71bc572d61642784c9271edd1a86a98e1
     /* padding-left: 10%; */
-    font-size: 16px;
+    font-size: 24px;
     color: #5d5f61;
     padding:20px;
-<<<<<<< HEAD
     /* margin-top:100px ; */
     /* text-align: center; */
     padding: 10%;
     margin-top: -10%;
-=======
-    margin-top:100px ;
->>>>>>> 407a3ed71bc572d61642784c9271edd1a86a98e1
 }
 .blackimg{
     height: auto;
@@ -178,7 +158,7 @@
 }
 .contenttitle{
     color: white;
-    font-size: 40px;
+    font-size: 70px;
      padding-left: 10%;
      padding-top: 40%;  
      line-height: 20px; 
@@ -186,11 +166,11 @@
 .ringtcontent{
     
     color: white;
-    font-size: 18px;
+    font-size: 21px;
 }
 .ringtcontent2{
     color: white;
-    font-size: 18px;
+    font-size: 21px;
     padding-left: 10%;
     padding-top: 10%;
     margin-bottom: 10%;
@@ -219,11 +199,11 @@
 .teamtile{
     padding-top: 5%;
     /* padding-left: 40%; */
-    font-size: 60px;
+    font-size: 80px;
     color: #1e1935;
 }
 .teamcontent{
-    font-size: 18px;
+    font-size: 21px;
     color: #5d5f61;
     /* padding-left: 35%; */
     padding-top: 1%;
@@ -252,4 +232,36 @@
     width: 100%;
     height: auto;
     margin-top: 100px;;
+}
+@media screen and (max-width: 400px) {
+    .titlecontent{
+        font-size: 40px;;
+    }
+    .laststufftitle{
+        font-size: 40px;
+    }
+    .contenttitle{
+        font-size: 40px;
+    }
+    .ringtcontent{
+        font-size: 16px;
+    }
+    .ringtcontent2{
+        font-size: 16px;
+    }
+    .teamtile{
+        font-size: 50px;
+    }
+    .teamcontent{
+        font-size: 17px;
+    }
+    .intertitle1{
+        font-size: 40px;
+    }
+    .intercontent{
+        font-size: 16px;
+    }
+    .contentscript{
+        font-size: 16px;;
+    } 
 }

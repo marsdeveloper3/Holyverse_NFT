@@ -160,7 +160,7 @@ function Home() {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <div className='storyline'>
-                        <div className='story'>
+                        <div className='story' style={{marginLeft:"10%"}}>
                             <p className="storytitle">Gamified</p>
                             <p className='storycontent'>Each comic will provide a gamified experience</p>
                             <p className='storycontent'>allowing you to customize and upgrade your avatars</p>
