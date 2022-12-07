@@ -101,7 +101,7 @@ function Home() {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container >
+            <Grid container style={{paddingBottom:"30px"}} >
                 <Grid item xs={12}>
                     <div className='second_header'>
                         <b className='interactive'>Interactive Comics</b><br />
@@ -188,7 +188,7 @@ function Home() {
                                     <p className='contentp'>and customizing them to your liking.</p>
                                 </div>
                                 <div className='purchasebtn'>
-                                    <Button variant="contained" sx={{ width: "100%", fontSize: "1vw", color: '#271948', backgroundColor: 'white', borderColor: 'white' }}>Purchase Now</Button>
+                                    <Button variant="contained" sx={{ width: "100%", fontSize: "10px", color: '#271948', backgroundColor: 'white', borderColor: 'white' }}>Purchase Now</Button>
                                 </div>
                             </div>
                         </div>
@@ -233,25 +233,25 @@ function Home() {
                 <Grid container >
                     <Grid item xs={12}>
                         <div className='newtitle'>
-                            <p>Newsletter</p>
+                            <a>Newsletter</a>
                         </div>
                     </Grid>
                     <Grid item xs={12}>
                         <div className='newscontent'>
-                            <p>Get the latest Holyverse updates</p>
+                            <a>Get the latest Holyverse updates</a>
                         </div>
                     </Grid>
                     <Grid item xs={12}>
                         <div className='dtinput'>
                             <p>Name</p>
-                            <TextField id="standard-basic" label="" style={{ borderBottom: '1px solid white', width: '100%' }} />
+                            <TextField id="cstandard-basi" label="" style={{ borderBottom: '1px solid white', color:"white",width: '100%' }} />
 
                         </div>
                     </Grid>
                     <Grid item xs={12}>
                         <div className='dtinput'>
                             <p>Email</p>
-                            <TextField id="standard-basic" label="" style={{ borderBottom: '1px solid white', width: '100%' }} />
+                            <TextField id="standard-basic" label="" style={{ borderBottom: '1px solid white',color:"white" ,width: '100%' }} />
 
                         </div>
                     </Grid>
@@ -300,7 +300,7 @@ function Home() {
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
-                <hr style={{marginBottom:"10%"}}/>
+                <hr style={{margin:"20px"}}/>
             </div>
             {/* </Grid> */}
         </div>

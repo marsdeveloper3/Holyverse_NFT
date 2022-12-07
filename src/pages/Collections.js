@@ -26,7 +26,7 @@ function Third(){
             <div className='navbar'>
                 <Main/>
             </div>
-            <Paper elevation={3} sx={{ width:"90%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",marginLeft:"5%",marginTop:"50px"}} >
+            <Paper elevation={3} sx={{ width:"95%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",margin:"auto",marginTop:"50px"}} >
                 <div className="makestuff">
                     <b>We Make Stuff<br/> Happen</b>
                 </div>
@@ -37,13 +37,13 @@ function Third(){
                 <button className='circlbelowbtn' style={{marginBottom:"10%"}}><ArrowDownIcon /></button>
             </Paper>
 
-            <Grid container >
+            <Grid container style={{margin:"auto"}}>
                 <Grid item xs={12} md={6} p={5}>
                     
                         <div className='sm_box'></div>
                         <div className='lg_box'></div>
                         <div className='sm_box'></div>
-                        <div className='lg_box'></div>
+                        <div className='lg_box1'></div>
                     
                 </Grid>
                 <Grid item xs={12} md={6} p={5}>
@@ -54,7 +54,7 @@ function Third(){
                             </div>
                             <div className='holyscript'>
                                 <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </b>
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> Ut enim </b>
                             </div>
                         </div>
                     
@@ -66,44 +66,31 @@ function Third(){
             </Grid>
 
 
-            <div className='boxs'>
-                    <ImageList variant="masonry" cols={2}>
-                        <ImageListItem >
-                               
-                                
-                         </ImageListItem>
-                    </ImageList>
-                    <ImageList variant="masonry" cols={2}>
-                        <ImageListItem >
-                            
-                            
-                            
-                        </ImageListItem>
-                    </ImageList>
-            </div>
-            <div className='realchange'>
-                <Stack direction="row" spacing={5}>
-                    <div className='interusecase'>
+          
+            
+                 <Grid container style={{margin:"auto"}}>
+                    
+                    <Grid item xs={12} md={6} p={5} >
                         
-                        <div className='intertitle'>   
-                        <div className='abovetitle'>
-                            <b>LET’S BUILD THIS THING TOGETHER</b>
-                        </div>
-                            <b>Ready to<br/>
-                                make a<br/>
-                                Real Change?</b>
+                        <div className='intertitle' >   
+                            <div className='abovetitle'>
+                                <b>LET’S BUILD THIS THING TOGETHER</b>
+                            </div>
+                                <b>Ready to<br/>
+                                    make a<br/>
+                                    Real Change?</b>
                         </div>
                         <div className='intercontent'>
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do<br/>
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. </b>
                         </div>
                         <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"20%",marginBottom:"50px"}}>Contained</Button>
-                    </div>
-                    <div className='blackimg'>
-                    </div>
-                </Stack>
-            </div>
-            <div className='lastgroup'>
+                    </Grid>
+                    <Grid item xs={12} md={6} p={5} >
+                    </Grid>
+                </Grid>
+            
+            <div className='lastgroup' style={{marginTop:"-5%"}}>
                 <Grid container >
                     <Grid item xs={12} md={6}>
                         <div className='lastbarnd'>
@@ -138,7 +125,7 @@ function Third(){
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
-                <hr style={{marginBottom:"10%"}}/>
+                <hr style={{margin:"20px"}}/>
             </div>
         </div>
     );

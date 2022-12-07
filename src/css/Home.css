@@ -7,7 +7,7 @@
 
 .interactive {
     position: relative;
-    font-size: 5.5vw;
+    font-size: 50px;
     font-family: inherit;
     font-style: inherit;
     font-weight: bold;
@@ -29,7 +29,7 @@
 
 
 .script1 {
-    font-size: 1.4vw;
+    font-size: 20px;
     color: #5d5f61;
     fill-rule: evenodd;
     /* letter-spacing: -25px; */
@@ -48,14 +48,14 @@
 .blank_text {}
 
 .planets {
-    margin-top: 10%;
+    margin-top: -20%;
 }
 
 .planetimg {
     border-radius: 40px;
-    width: 90%;
-    margin-left: 5% !important;
-    margin-top: 80px;
+    width: 80%;
+    margin-left: 10% !important;
+    margin-top: 50px;
     height: auto;
 }
 
@@ -70,7 +70,7 @@
 
 .story {
     margin-top: 50px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .storytitle {
@@ -84,13 +84,13 @@
 
 .storyline p {
     margin: 0;
-    padding: 5px;
+    padding: 0px;
 }
 
 .storycontent {
-    font-size: 24px;
+    font-size: 15px;
     color: #5d5f61;
-    opacity: 1;
+    opacity: 2;
 }
 
 
@@ -137,7 +137,7 @@
 .upgrade {
     /* padding-top: 150px;
     padding-left: 150px; */
-    font-size: 3.5vw;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -157,13 +157,13 @@
 
 .contentp {
     margin: 0;
-    font-size: 1vw;
+    font-size: 15px;
     font-weight: bold;
     color: #5d5f61;
 }
 
 .purchasebtn {
-    padding-right: 50px;
+    padding-right: 10px;
 }
 
 .avartarcontent {
@@ -322,7 +322,7 @@
 
 @media only screen and (max-width: 768px) {
     .storycontent {
-        font-size: 17px;
+        font-size: 14px;
         color: #5d5f61;
         opacity: 1;
     }
@@ -336,4 +336,8 @@
 .MuiAppBar-colorPrimary {
     color: #fff;
     background-color:white!important;
+}
+.MuiInputBase-input {
+    font: inherit;
+    color: white !important;
 }
