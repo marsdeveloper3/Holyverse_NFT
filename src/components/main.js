@@ -136,55 +136,60 @@ const Main = (props) => {
                     <ListItemIcon>
                       <BookmarksIcon />
                     </ListItemIcon>
-                    <Typography variant="h6"> Collections </Typography>
+                    <Typography variant="h6"> &nbsp;Collections </Typography>
                   </MenuItem>
                 </Menu>
               </>
             ) : (
-              <div style={{ marginRight: "2rem" }}>
+              <div style={{ marginRight: "2rem",display:"flex" }}>
                 <Button
                   variant="text"
                   component={Link}
                   to="/"
                   color="default"
+                  
                 >
-                  <HomeIcon />
-                  Home
+                  <HomeIcon style={{display:"flex",}} />
+                  &nbsp;Home
                 </Button>
                 <Button
                   variant="text"
                   component={Link}
                   to="/collections"
                   color="default"
+                  style={{display:"flex",}}
                 >
-                  <SchoolIcon />
-                  Collections
+                  <SchoolIcon style={{display:"flex",}}/>
+                  &nbsp;Collections
                 </Button>
                 <Button
                   variant="text"
                   component={Link}
                   to="/about"
                   color="default"
+                  
                 >
-                  <PersonIcon />
-                  About
+                  <PersonIcon style={{display:"flex",}} />
+                  &nbsp;About
                 </Button>
                 <Button
                   variant="text"
                   component={Link}
                   to="/avartars"
                   color="default"
+                  
                 >
-                  <BookmarksIcon />
-                  Avartars
+                  <BookmarksIcon style={{display:"flex",}}/>
+                  &nbsp;Avartars
                 </Button>
                 <Button
-                  variant="text"
+                  variant="outlined"
+                  
                   component={Link}
                   to=""
                   color="default"
+                  style={{display:"flex",}}
                 >
-                  
                   Connect Wallet
                 </Button>
               </div>

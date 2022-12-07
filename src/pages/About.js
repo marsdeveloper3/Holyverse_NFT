@@ -63,7 +63,7 @@ function Last(){
 
              <Grid container>
                     <Grid item xs={12} sm={6} className={'title'}>
-                            fasdf
+                            
                     </Grid>
                     <Grid item xs={12} sm={6} className={"content"}>
                         <div className='titlecontent'>
@@ -83,13 +83,13 @@ function Last(){
                             <b>We Make<br/>
                             Stuff Happen</b>
                         </div>
-                        <div>
+                        <div style={{display:"flex"}}>
                             <img className='whiterectangle' src='blankimg.png'/>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <div className='contenttitle'>   
-                                <b>Our Approach</b><br/>
+                                <b>Our Approach</b><br/><br/><br/>
                                 <b className='ringtcontent'>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br/>
                                 ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing  <br/>
@@ -180,25 +180,27 @@ function Last(){
                     </div>
             </div>
             
-            <div className='greatdesign'>
-                <Stack direction="row" spacing={5}>
+            <Grid container className='greatdesign'>
+                <Grid item xs={12} md={6} p={5}>
                     <div className='interusecase'>
                         
-                        <div className='intertitle'>   
+                        <div className='intertitle1'>   
                         
                             <b>Make Your Design<br/>
                                 Great Again</b>
                         </div>
+                    </div>
                         <div className='intercontent'>
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do<br/>
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. </b>
                         </div>
-                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"20%",marginBottom:"50px"}}>MINT AN NFT</Button>
-                    </div>
-                    <div className='blackimg'>
-                    </div>
-                </Stack>
-            </div>
+
+                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"30%",marginBottom:"50px"}}>MINT AN NFT</Button>
+                    </Grid>
+                    <Grid item xs={12} md={6} p={5} >
+                    </Grid>
+                
+            </Grid>
             <div className='lastgroup'>
                 <Grid container >
                     <Grid item xs={12} md={6}>
@@ -234,7 +236,7 @@ function Last(){
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
-                <hr style={{marginBottom:"20px"}}/>
+                <hr style={{margin:"20px"}}/>
             </div>
         </div>
     );

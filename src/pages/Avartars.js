@@ -18,7 +18,7 @@ import { Card, CardContent, CardMedia } from '@material-ui/core';
 const arrayTemp = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 const useStyles = makeStyles({
     root: {
-        padding: "20px",
+        padding: "40px",
         background: "transparent",
     },
     case:{
@@ -173,7 +173,7 @@ function Second(){
                         {/* </Grid>  */}
                     </Grid>
                 </Grid>
-                <hr style={{marginBottom:"10%"}}/>
+                <hr style={{margin:"20px"}}/>
             </div>
             {/* </div> */}
             {/* <div className='lastgruop' style={{height:"400px"}}>
