@@ -66,7 +66,7 @@
 .makestuff{
     color:#22193E;
     font-size: 80px;
-    font-weight: bold;
+    
     text-align: center;
     padding-top: 50px;
 }
@@ -108,12 +108,13 @@
 }
 .abovetitle{
     font-size: 14px;
-    color: #1b1b1e;
+    color:#22193E ;
 }
 .intertitle{
     margin-top: auto;
     font-size: 60px;
-    /* padding: 10%; */
+    padding: 10%;
+    color:#22193E;
 }
 .intercontent2{
     font-size: 21px;
@@ -155,5 +156,8 @@
     }
     .abovetitle{
         font-size: 10px;
+    }
+    .mintnft{
+        font-size: 15px;
     }
 }    

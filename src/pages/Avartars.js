@@ -39,8 +39,8 @@ function Second(){
                     {/* <div className="title"> */}
                     <Grid item xs={12} sm={6} style={{backgroundColor:"#F3F3F5",padding:"5%"}}>
                             <div className='titlecontent'>
-                                <b>Upgrade your<br/>
-                                 Holy Avartar</b> 
+                                <p>Upgrade your<br/>
+                                 Holy Avartar</p> 
                             </div>
                     </Grid>
                     {/* </div> */}
@@ -112,10 +112,10 @@ function Second(){
             </div>
             {/* <div className='intro'> */}
             <Grid container style={{paddingBottom:"5%"}} >
-                <Grid item xs={12} md={6} p={10} style={{padding:"10%"}}>
+                <Grid item xs={12} md={6} p={10} style={{paddingLeft:"10%"}}>
                     {/* <div className='interusecase'> */}
-                        <div className='intertitle'>   
-                            <b>Insert Usecase<br/> here</b>
+                        <div className='insertusecase'>   
+                            <p>Insert Usecase<br/> here</p>
                         </div>
                         <div className='intercontent2'>
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing<br/>  
@@ -141,7 +141,7 @@ function Second(){
             <div className='lastgroup'>
                 <Grid container >
                     <Grid item xs={12} md={6}>
-                        <div className='lastbarnd'>
+                        <div className='lastbrand'>
                             <div className='lasttitle'><img src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
@@ -155,7 +155,7 @@ function Second(){
                                     <div className='infos'>
                                         <div>INFO</div>
                                         <div>About</div>
-                                        <div>NFTsl</div>
+                                        <div>NFTs</div>
                                         <div>Whitepaper</div>
                                         <div>FAQs</div>
                                     </div>
@@ -178,7 +178,7 @@ function Second(){
             {/* </div> */}
             {/* <div className='lastgruop' style={{height:"400px"}}>
                     <Stack direction="row" spacing={5} style = {{justifyContent:'space-between', marginTop:'150px'}}>
-                        <div className='lastbarnd'>
+                        <div className='lastbrand'>
                             <div className='lasttitle'><img  src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
@@ -188,7 +188,7 @@ function Second(){
                             <div className='infos'>
                                 <div>INFO</div>
                                 <div>About</div>
-                                <div>NFTsl</div>
+                                <div>NFTs</div>
                                 <div>Whitepaper</div>
                                 <div>FAQs</div>
                             </div>

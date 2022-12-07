@@ -11,7 +11,7 @@
     margin-top: 100px;
     
     font-size:  80px;
-    font-weight: bold;
+
     opacity: 1;
     fill-rule: evenodd;
     color: #22193e;
@@ -40,7 +40,7 @@
     color: white;
     font-size: 40px;
     margin-top: 20%;
-    margin-left: 80%;
+    margin-left: 49%;
 }
 .circlbelowbtn1{
     align-content: center;
@@ -96,33 +96,35 @@
     text-align: center;
 }
 .intertitle1{
-    
     padding-top: 10%;
     font-size: 60px;
     color: #22193e;
-    font-weight: bold;
+    
     padding: 10%;
     
 }
+.greatagain{
+    font-size: 20px;
+}
 .laststufftitle{
     padding-left: 10%;
-    padding-top: 20%;
+    padding-top: 10%;
     font-size: 80px;
     color: white;
-    font-weight: bold;
-    padding-bottom: 40%;
+    
+    padding-bottom: 42%;
 }
 .intercontent{
     
     /* padding-top: 10%; */
-    /* padding-left: 10%; */
+    padding-left: 10%; 
     
     color: #5d5f61;
     padding:20px;
     /* margin-top:100px ; */
     /* text-align: center; */
     padding: 10%;
-    margin-top: -10%;
+    margin-top: -20%;
 }
 .blackimg{
     height: auto;
@@ -145,9 +147,9 @@
 }
 .whiterectangle{
     /* background-color: white; */
-    width:40%;
+    width:33%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 20px;
     /* margin-left: 25%; */
    
     margin:auto;
@@ -158,25 +160,26 @@
 }
 .contenttitle{
     color: white;
-    font-size: 70px;
+    font-size: 30px;
      padding-left: 10%;
      padding-top: 40%;  
      line-height: 20px; 
 }
 .ringtcontent{
-    
+    line-height: 35px;
     color: white;
     font-size: 21px;
 }
+
 .ringtcontent2{
     color: white;
+    line-height: 35px;
     font-size: 21px;
     padding-left: 10%;
     padding-top: 10%;
     margin-bottom: 10%;
 }
 .bigwhiterectangle{
-    
     background-color: white;
     width: 50%;
     height: auto;
@@ -201,6 +204,7 @@
     /* padding-left: 40%; */
     font-size: 80px;
     color: #1e1935;
+    line-height: 10%;
 }
 .teamcontent{
     font-size: 21px;
@@ -233,15 +237,27 @@
     height: auto;
     margin-top: 100px;;
 }
+.MuiAvatar-colorDefault {
+    background-color: #8553CC !important;
+}
+
+.insertusecase {
+    padding-top: 10%;
+    font-size: 60px;
+    color: #22193e;
+    
+}
 @media screen and (max-width: 400px) {
     .titlecontent{
         font-size: 40px;;
     }
     .laststufftitle{
         font-size: 40px;
+        padding-bottom: 35px !important;
     }
     .contenttitle{
-        font-size: 40px;
+        font-size: 20px;
+        padding-top: 40px; 
     }
     .ringtcontent{
         font-size: 16px;
@@ -274,5 +290,11 @@
     .smallavartarsize{
         width: 20px!important;
         height: 20px!important;
+    }
+    .mintnft{
+        font-size: 15px;
+    }
+    .greatagain{
+        font-size: 10px;
     }
 }

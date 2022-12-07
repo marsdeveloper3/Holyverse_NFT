@@ -29,7 +29,7 @@ function Third(){
             
             <Paper elevation={3} sx={{ width:"95%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",margin:"auto",marginTop:"10% "}} >
                 <div className="makestuff">
-                    <b>We Make Stuff<br/> Happen</b>
+                    <p>We Make Stuff<br/> Happen</p>
                 </div>
                 <div className='stuffscript'>
                     <a>We are laying the groundwork for web3 — the next generation<br/>
@@ -75,17 +75,17 @@ function Third(){
                         
                         <div className='intertitle' >   
                             <div className='abovetitle'>
-                                <b>LET’S BUILD THIS THING TOGETHER</b>
+                                <b>LET'S BUILD THIS THING TOGETHER</b>
                             </div>
-                                <b>Ready to<br/>
+                                <p>Ready to<br/>
                                     make a<br/>
-                                    Real Change?</b>
+                                    Real Change?</p>
                         </div>
                         <div className='intercontent'>
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do<br/>
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. </b>
                         </div>
-                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"10%",marginBottom:"50px"}}>MINT AN NFT</Button>
+                        <Button variant="contained" sx={{ backgroundColor: "#22193E", color: "white", fontSize: '20px', marginLeft: "10%", marginBottom: "50px", width: "30%", padding:"20px" }}><b>MINT AN NFT</b></Button>
                     </Grid>
                     <Grid item xs={12} md={6} p={5} >
                     </Grid>
@@ -93,22 +93,22 @@ function Third(){
             
             <div className='lastgroup' style={{marginTop:"-5%"}}>
                 <Grid container >
-                    <Grid item xs={12} md={6}>
-                        <div className='lastbarnd'>
+                    <Grid item xs={12} md={8}>
+                        <div className='lastbrand'>
                             <div className='lasttitle'><img src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={4}>
                         {/* <Grid container > */}
                             <div className='details'>
                                 <Grid item xs={12} md={6}>
                                     <div className='infos'>
                                         <div>INFO</div>
                                         <div>About</div>
-                                        <div>NFTsl</div>
+                                        <div>NFTs</div>
                                         <div>Whitepaper</div>
                                         <div>FAQs</div>
                                     </div>

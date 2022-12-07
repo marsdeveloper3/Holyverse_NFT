@@ -272,7 +272,7 @@ function Home() {
             <div className='lastgroup'>
                 <Grid container >
                     <Grid item xs={12} md={6}>
-                        <div className='lastbarnd'>
+                        <div className='lastbrand'>
                             <div className='lasttitle'><img src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
@@ -286,7 +286,7 @@ function Home() {
                                     <div className='infos'>
                                         <div>INFO</div>
                                         <div>About</div>
-                                        <div>NFTsl</div>
+                                        <div>NFTs</div>
                                         <div>Whitepaper</div>
                                         <div>FAQs</div>
                                     </div>

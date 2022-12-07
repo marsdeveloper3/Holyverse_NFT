@@ -251,15 +251,16 @@
     font-weight: bold;
     color: #22193e;
     /* padding-left: 100px; */
-    text-align: center;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .lastcontent {
-    margin: 0px;
+    margin: 0 0 0 60px;
     font-size: 21px;
     color: #22193e;
     opacity: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .details {
@@ -330,6 +331,10 @@
         font-size: 16px;
     }
     .nft_price {
+        font-size: 14px;
+    }
+
+    .lastcontent {
         font-size: 14px;
     }
 }
