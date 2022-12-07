@@ -3,13 +3,13 @@
     height:970px;
 }
 .title{
-    height:100%;
+    width:100%;
     background-color: #f3f3f5;
     
 }
 .titlecontent{
-    padding-left: 10%;
-    padding-top: 35%;
+    padding:20%;
+    
     font-size:  60px;
     font-weight: bold;
     opacity: 1;
@@ -49,7 +49,7 @@
     background-color: black;
     color: white;
     font-size: 40px;
-    margin-top: 20px;
+    margin-bottom: 10%;
     margin-left: 20%;
 }
 .namesize
@@ -83,6 +83,7 @@
 .interusecase{
     height: auto;
     width: 100%;
+    text-align: center;
 }
 .stuffleft{
     color: #1e1935;
@@ -94,14 +95,14 @@
 .intertitle{
     padding-left: 10%;
     padding-top: 20%;
-    font-size: 60px;
+    font-size: 40px;
     color: #22193e;
     font-weight: bold;
 }
 .laststufftitle{
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 20%;
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     font-weight: bold;
 }
@@ -128,12 +129,12 @@
     background: linear-gradient(#281D6C,#6545A0);
 }
 .whiterectangle{
-    background-color: white;
-    width:300px;
-    height: 300px;
-    border-radius: 15px;
+    /* background-color: white; */
+    width:40%;
+    height: auto;
+    border-radius: 30px;
     margin-left: 25%;
-    margin-top:50%;
+    margin-top:100px;
 }
 .stuffright{
     width: 100%;
@@ -142,7 +143,7 @@
 .contenttitle{
     color: white;
     font-size: 40px;
-     padding-left: 20%;
+     padding-left: 10%;
      padding-top: 40%;   
 }
 .ringtcontent{
@@ -153,46 +154,52 @@
 .ringtcontent2{
     color: white;
     font-size: 18px;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 100px;
-    padding-bottom: 100px;
+    margin-bottom: 10%;
 }
 .bigwhiterectangle{
+    
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: auto;
     border-radius: 20px;
     margin-left: 25%;
-    margin-top: 10%;
+    margin-top: 20px;
 }
+.bigwhiterectangle :after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
 .teamintro{
     background-color: white;
     width: 100%;
     height: auto;
-    
+    text-align: center;
 }
 .teamtile{
     padding-top: 5%;
-    padding-left: 40%;
-    font-size: 80px;
+    /* padding-left: 40%; */
+    font-size: 60px;
     color: #1e1935;
 }
 .teamcontent{
     font-size: 18px;
     color: #5d5f61;
-    padding-left: 35%;
+    /* padding-left: 35%; */
     padding-top: 1%;
 }
 .avartashow{
     width: 100%;
     height: auto;
     padding-top: 5%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-bottom: 5%;
 }
 .avartashow .MuiAvatar-colorDefault {
-    width: 200px!important;
-    height: 200px!important;
+    width: 60px!important;
+    height: 60px!important;
 }
 
 .avartashow .MuiAvatar-img {

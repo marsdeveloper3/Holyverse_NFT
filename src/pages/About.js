@@ -9,6 +9,7 @@ import {Stack,styled} from '@mui/system';
 import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Button from '@mui/material/Button';
 const avatarStyle = {
     color: "green",
@@ -60,36 +61,33 @@ function Last(){
             <Main/>
             </div>
 
-            <div className='description'>
-                <SplitPane
-                    split="vertical"
-                    minSize={100}
-                    maxSize={-100}
-                    defaultSize={"50%"}
-
-                >
-                    <div className="title">
-                     </div>
-                    <div className="content">
+             <Grid container>
+                    <Grid item xs={12} sm={6} className={'title'}>
+                            fasdf
+                    </Grid>
+                    <Grid item xs={12} sm={6} className={"content"}>
                         <div className='titlecontent'>
                                 <b>Ready to<br/>
                                     make a<br/>
                                     Real Change?</b> 
                             </div>
                         <button className='circlbelowbtn1'><ArrowDownIcon /></button>
-                    </div>
-                </SplitPane>
-            </div>
-            <div className='laststuff'>
-                <Stack direction="row" spacing={5}>
-                    <div className='stuffleft'>
+                    </Grid>
+            </Grid>
+            {/* <div className='laststuff'> */}
+            <Grid container className={'laststuff'}>
+
+                     <Grid item xs={12} sm={6}>
+                    
                         <div className='laststufftitle'>   
                             <b>We Make<br/>
                             Stuff Happen</b>
                         </div>
-                        <div className='whiterectangle'></div>
-                    </div>
-                    <div className='stuffright'>
+                        <div>
+                            <img className='whiterectangle' src='blankimg.png'/>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
                         <div className='contenttitle'>   
                                 <b>Our Approach</b><br/>
                                 <b className='ringtcontent'>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
@@ -98,7 +96,9 @@ function Last(){
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna <br/>
                                 aliqua. Ut enim ad minim veniam.</b>
                         </div>
-                        <div className='bigwhiterectangle'></div>
+                        <div >
+                        <img className='bigwhiterectangle' src='blankimg.png'/>
+                        </div>
                         <div className='ringtcontent2'>
                                 <b>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do <br/>
@@ -122,10 +122,9 @@ function Last(){
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/>
                                 </b>
                         </div>
-                    </div>
-                    
-                </Stack>
-            </div>
+                    </Grid>
+             </Grid>
+            {/* </div> */}
             <div className='teamintro'>
                     <div className='teamtile'>
                         <b>The Team</b><br/>
@@ -201,30 +200,41 @@ function Last(){
                 </Stack>
             </div>
             <div className='lastgroup'>
-                    <Stack direction="row" spacing={5} style = {{justifyContent:'space-between', marginTop:'150px'}}>
+                <Grid container >
+                    <Grid item xs={12} md={6}>
                         <div className='lastbarnd'>
-                            <div className='lasttitle'><img  src="logo-horizontal.png" /></div>
+                            <div className='lasttitle'><img src="logo-horizontal.png" /></div>
                             <div className='lastcontent'>
                                 <p>COMICS REIMAGINED</p>
                             </div>
                         </div>
-                        <div  className='details'>
-                            <div className='infos'>
-                                <div>INFO</div>
-                                <div>About</div>
-                                <div>NFTsl</div>
-                                <div>Whitepaper</div>
-                                <div>FAQs</div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        {/* <Grid container > */}
+                            <div className='details'>
+                                <Grid item xs={12} md={6}>
+                                    <div className='infos'>
+                                        <div>INFO</div>
+                                        <div>About</div>
+                                        <div>NFTsl</div>
+                                        <div>Whitepaper</div>
+                                        <div>FAQs</div>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} md={6}>
+
+                                    <div className='socials'>
+                                        <div>SOCIALS</div>
+                                        <div>Instragram</div>
+                                        <div>Twitter</div>
+                                        <div>Tiktok</div>
+                                    </div>
+                                </Grid>
                             </div>
-                            <div className='socials'>
-                                <div>SOCIALS</div>
-                                <div>Instragram</div>
-                                <div>Twitter</div>
-                                <div>Tiktok</div>
-                            </div>
-                        </div>
-                    </Stack>  
-                    <hr style={{marginBottom:"10%"}}/>
+                        {/* </Grid>  */}
+                    </Grid>
+                </Grid>
+                <hr style={{marginBottom:"20px"}}/>
             </div>
         </div>
     );

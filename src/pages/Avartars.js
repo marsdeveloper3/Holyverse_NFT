@@ -18,8 +18,11 @@ import { Card, CardContent, CardMedia } from '@material-ui/core';
 const arrayTemp = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 const useStyles = makeStyles({
     root: {
-        padding: "10px",
+        padding: "20px",
         background: "transparent",
+    },
+    case:{
+         borderRadius:'20px',
     },
     media: {
         height: "25%",
@@ -76,6 +79,7 @@ function Second(){
                         <Grid item xs={12} sm={6} md={3}>
                             <Card className={classes.root}>
                                 <CardMedia
+                                className={classes.case}
                                     component="img"
                                     height="200"
                                     width="800"

@@ -7,7 +7,7 @@
 
 .interactive {
     position: relative;
-    font-size: 40px;
+    font-size: 5.5vw;
     font-family: inherit;
     font-style: inherit;
     font-weight: bold;
@@ -29,7 +29,7 @@
 
 
 .script1 {
-    font-size: 15px;
+    font-size: 1.4vw;
     color: #5d5f61;
     fill-rule: evenodd;
     /* letter-spacing: -25px; */
@@ -332,4 +332,8 @@
     .nft_price {
         font-size: 14px;
     }
+}
+.MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color:white!important;
 }

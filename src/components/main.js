@@ -16,7 +16,7 @@ import {
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-
+import '../css/Home.css';
 // IMPORTING ICONS
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
@@ -60,7 +60,7 @@ const Main = (props) => {
   return (
     <div className={classes.root}>
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar className={'MuiAppBar-colorPrimary'}>
           <Toolbar>
             <Typography
               variant="h5"
@@ -71,6 +71,7 @@ const Main = (props) => {
               <Typography variant="h4" className={classes.logo}>
                 <img src="logo-horizontal.png"></img>
               </Typography>
+              
             </Typography>
             {isMobile ? (
               <>
@@ -176,6 +177,15 @@ const Main = (props) => {
                 >
                   <BookmarksIcon />
                   Avartars
+                </Button>
+                <Button
+                  variant="text"
+                  component={Link}
+                  to=""
+                  color="default"
+                >
+                  
+                  Connect Wallet
                 </Button>
               </div>
             )}
