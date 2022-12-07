@@ -24,6 +24,9 @@ import SchoolIcon from "@material-ui/icons/School";
 import PersonIcon from "@material-ui/icons/Person";
 import BookmarksIcon from "@material-ui/icons/Bookmarks";
 
+import { useWeb3React } from '@web3-react/core';
+import { injected, walletconnector, bsc } from '../utils/connector';
+
 // LOCAL-STYLING
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +53,9 @@ function HideOnScroll(props) {
 
 const Main = (props) => {
   const classes = useStyles();
+
+  const { account, chainId, activate, deactivate } = useWeb3React();
+
   const [anchor, setAnchor] = React.useState(null);
   const open = Boolean(anchor);
   const theme = useTheme();
@@ -57,6 +63,17 @@ const Main = (props) => {
   const handleMenu = (event) => {
     setAnchor(event.currentTarget);
   };
+
+  const connectMetamask = async () => {
+    if (!account)
+      await activate(injected);
+    else
+      await deactivate();
+
+    setAnchor(null);
+  }
+
+
   return (
     <div className={classes.root}>
       <HideOnScroll {...props}>
@@ -71,7 +88,7 @@ const Main = (props) => {
               <Typography variant="h4" className={classes.logo}>
                 <img src="logo-horizontal.png"></img>
               </Typography>
-              
+
             </Typography>
             {isMobile ? (
               <>
@@ -138,18 +155,34 @@ const Main = (props) => {
                     </ListItemIcon>
                     <Typography variant="h6"> &nbsp;Collections </Typography>
                   </MenuItem>
+
+                  <MenuItem
+                    onClick={() => connectMetamask()}
+                    component={Link}
+                    to=""
+                  >
+                    <Typography variant="h6">
+                      {!account ? (
+                        <>&nbsp;&nbsp;&nbsp;CONNECT WALLET</>
+                      ) : (
+                        <>{account.slice(0, 5) + '....' + account.slice(account.length - 4, account.length)}</>
+                      )}
+                    </Typography>
+                  </MenuItem>
+
                 </Menu>
               </>
             ) : (
-              <div style={{ marginRight: "2rem",display:"flex" }}>
+
+              <div style={{ marginRight: "2rem", display: "flex" }}>
+                <div style={{ borderLeft: "1px solid #D0D0D0", height: "50px", paddingLeft: "40px" }}></div>
                 <Button
                   variant="text"
                   component={Link}
                   to="/"
                   color="default"
-                  
+
                 >
-                  <HomeIcon style={{display:"flex",}} />
                   &nbsp;Home
                 </Button>
                 <Button
@@ -157,9 +190,9 @@ const Main = (props) => {
                   component={Link}
                   to="/collections"
                   color="default"
-                  style={{display:"flex",}}
+                  style={{ display: "flex", }}
                 >
-                  <SchoolIcon style={{display:"flex",}}/>
+
                   &nbsp;Collections
                 </Button>
                 <Button
@@ -167,9 +200,9 @@ const Main = (props) => {
                   component={Link}
                   to="/about"
                   color="default"
-                  
+
                 >
-                  <PersonIcon style={{display:"flex",}} />
+
                   &nbsp;About
                 </Button>
                 <Button
@@ -177,20 +210,25 @@ const Main = (props) => {
                   component={Link}
                   to="/avartars"
                   color="default"
-                  
+
                 >
-                  <BookmarksIcon style={{display:"flex",}}/>
+
                   &nbsp;Avartars
                 </Button>
                 <Button
                   variant="outlined"
-                  
+                  onClick={connectMetamask}
                   component={Link}
                   to=""
                   color="default"
-                  style={{display:"flex",}}
+                  style={{ display: "flex", }}
                 >
-                  Connect Wallet
+                  {!account ? (
+                    <>CONNECT WALLET</>
+                  ) : (
+                    <>{account.slice(0, 5) + '......' + account.slice(account.length - 4, account.length)}</>
+                  )}
+
                 </Button>
               </div>
             )}

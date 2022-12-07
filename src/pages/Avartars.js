@@ -35,9 +35,9 @@ function Second(){
             <div>
                 <Main/>
             </div>
-            <Grid container style={{padding:"5%"}} >
+            <Grid container style={{padding:""}} >
                     {/* <div className="title"> */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} style={{backgroundColor:"#F3F3F5",padding:"5%"}}>
                             <div className='titlecontent'>
                                 <b>Upgrade your<br/>
                                  Holy Avartar</b> 
@@ -45,7 +45,7 @@ function Second(){
                     </Grid>
                     {/* </div> */}
                     {/* <div className="content"> */}
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} style={{padding:"5%"}}>
                         <div className='contentscript'>
                             <b>
                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed<br/>  
@@ -60,7 +60,7 @@ function Second(){
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </b>
                         </div>
-                        <button className='circlbelowbtn'><ArrowDownIcon /></button>
+                        <button className='circlbelowbtn2'><ArrowDownIcon /></button>
                     </Grid>
                     {/* </div> */}
             </Grid>
@@ -112,12 +112,12 @@ function Second(){
             </div>
             {/* <div className='intro'> */}
             <Grid container style={{paddingBottom:"5%"}} >
-                <Grid item xs={12} md={6} p={10} >
+                <Grid item xs={12} md={6} p={10} style={{padding:"10%"}}>
                     {/* <div className='interusecase'> */}
                         <div className='intertitle'>   
                             <b>Insert Usecase<br/> here</b>
                         </div>
-                        <div className='intercontent'>
+                        <div className='intercontent2'>
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing<br/>  
                             elit, sed do eiusmod tempor incididunt ut labore et <br/>
                             dolore magna aliqua. Ut enim ad minim veniam. <br/>

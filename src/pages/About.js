@@ -67,6 +67,9 @@ function Last(){
                     </Grid>
                     <Grid item xs={12} sm={6} className={"content"}>
                         <div className='titlecontent'>
+                        <div className='abovetitle'>
+                                <b>LET’S BUILD THIS THING TOGETHER</b>
+                            </div>
                                 <b>Ready to<br/>
                                     make a<br/>
                                     Real Change?</b> 
@@ -142,9 +145,9 @@ function Last(){
                                     vertical: 'top',
                                     horizontal: 'left',
                                     }}
-                                    badgeContent={<SmallAvatar alt="Remy Sharp" src="1.png" />}
+                                    badgeContent={<SmallAvatar className={'smallavartarsize'} alt="Remy Sharp" src="1.png" />}
                                 >
-                                    <Avatar alt="Travis Howard" src="2.png" />
+                                    <Avatar className={'avartarsize'}  alt="Travis Howard" src="2.png" />
                                 </Badge>
                                 
                                    <br/><b>Team Member1<br/> Position</b>
@@ -157,9 +160,9 @@ function Last(){
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                badgeContent={<SmallAvatar alt="Remy Sharp" src="1.png" />}
+                                badgeContent={<SmallAvatar className={'smallavartarsize'} alt="Remy Sharp" src="1.png" />}
                             >
-                                <Avatar alt="Travis Howard" src="2.png" />
+                                <Avatar className={'avartarsize'} alt="Travis Howard" src="2.png" />
                             </Badge>
                             <br/><b>Team Member1<br/> Position</b>
                             </div>
@@ -170,9 +173,9 @@ function Last(){
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                badgeContent={<SmallAvatar alt="Remy Sharp" src="1.png" />}
+                                badgeContent={<SmallAvatar className={'smallavartarsize'} alt="Remy Sharp" src="1.png" />}
                             >
-                                <Avatar alt="Travis Howard" src="2.png" />
+                                <Avatar className={'avartarsize'} alt="Travis Howard" src="2.png" />
                             </Badge>
                             <br/><b>Team Member1<br/> Position</b>
                             </div>
@@ -195,7 +198,7 @@ function Last(){
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. </b>
                         </div>
 
-                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"30%",marginBottom:"50px"}}>MINT AN NFT</Button>
+                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"10%",marginBottom:"50px",width:"30%"}}>MINT AN NFT</Button>
                     </Grid>
                     <Grid item xs={12} md={6} p={5} >
                     </Grid>

@@ -91,7 +91,7 @@ function Home() {
                         <div className='btn-group'>
                             <Stack direction="row" spacing={2}>
                                 <Button variant="outlined" sx={{ width: '50%', color: 'white', backgroundColor: '#271948', borderColor: 'white' }} >
-                                    VIEW NFT
+                                    VIEW NFT<ArrowForwardIcon/>
                                 </Button>
                                 <Button variant="contained" size="large" sx={{ width: '50%', color: '#271948', backgroundColor: 'white', borderColor: 'white' }}>
                                     MINT NOW
@@ -227,6 +227,10 @@ function Home() {
 
                     ))}
                 </Grid>
+                        <div className='' style={{display: "flex",justifyContent: "center"}}>
+                            <button className='btn1' ><ArrowBackIcon /></button>
+                            <button className='btn2'><ArrowForwardIcon /></button>
+                        </div>
             </div>
 
             <div className='newslettergroup'>

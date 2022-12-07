@@ -270,7 +270,7 @@
 }
 
 .details div {
-    text-align: center;
+    text-align: left;
 }
 
 .infos div:first-child,
@@ -340,6 +340,11 @@
 .MuiInputBase-input {
     font: inherit;
     color: white !important;
+}
+
+.MuiButton-text {
+    padding-left:80px !important;
+    padding-right:80px !important;
 }
 @media screen and (max-width: 400px) {
     .interactive{

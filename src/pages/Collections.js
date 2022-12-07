@@ -26,7 +26,8 @@ function Third(){
             <div className='navbar'>
                 <Main/>
             </div>
-            <Paper elevation={3} sx={{ width:"95%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",margin:"auto",marginTop:"50px"}} >
+            
+            <Paper elevation={3} sx={{ width:"95%",height:"auto", alignItem:"center",backgroundColor:"#F1F1F3",borderRadius:"10px",margin:"auto",marginTop:"10% "}} >
                 <div className="makestuff">
                     <b>We Make Stuff<br/> Happen</b>
                 </div>
@@ -84,7 +85,7 @@ function Third(){
                             <b>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do<br/>
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. </b>
                         </div>
-                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"20%",marginBottom:"50px"}}>Contained</Button>
+                        <Button variant="contained" sx={{backgroundColor:"#22193E",color:"white",marginLeft:"10%",marginBottom:"50px"}}>MINT AN NFT</Button>
                     </Grid>
                     <Grid item xs={12} md={6} p={5} >
                     </Grid>

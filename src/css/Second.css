@@ -53,7 +53,7 @@
     font-size: 40px;
     margin-bottom: 10%;
     margin-top: 100px;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 .namesize
 {
@@ -86,7 +86,7 @@
 .interusecase{
     height: auto;
     width: 100%;
-    text-align: center;
+    
 }
 .stuffleft{
     color: #1e1935;
@@ -116,7 +116,7 @@
     
     /* padding-top: 10%; */
     /* padding-left: 10%; */
-    font-size: 24px;
+    
     color: #5d5f61;
     padding:20px;
     /* margin-top:100px ; */
@@ -215,14 +215,14 @@
     /* padding-left: 5%; */
     padding-bottom: 5%;
 }
-.avartashow .MuiAvatar-colorDefault {
-    width: 60px!important;
-    height: 60px!important;
-}
 
-.avartashow .MuiAvatar-img {
-    width: 50px !important;
-    height: 50px !important;
+.avartarsize{
+    width: 250px!important;
+    height: 250px!important;
+}
+.smallavartarsize{
+    width: 50px!important;
+    height: 50px!important;
 }
 .teamscript{
     text-align: center;
@@ -263,5 +263,16 @@
     }
     .contentscript{
         font-size: 16px;;
-    } 
+    }
+    .intercontent{
+        font-size: 16px;
+    }
+    .avartarsize{
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .smallavartarsize{
+        width: 20px!important;
+        height: 20px!important;
+    }
 }
