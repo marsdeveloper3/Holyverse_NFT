@@ -247,6 +247,26 @@
     color: #22193e;
     
 }
+@media screen and (max-width: 850px) and (min-width: 400px) {
+    .avartarsize{
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .smallavartarsize{
+        width: 20px!important;
+        height: 20px!important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .titlecontent{
+        font-size: 50px;;
+    }
+    .laststufftitle{
+        font-size: 50px;
+        padding-bottom: 20px !important;
+    }
+}
 @media screen and (max-width: 400px) {
     .titlecontent{
         font-size: 40px;;
